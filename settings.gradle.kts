@@ -21,6 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "AVIA"
 include(":app")
-include(":network")
-include(":core")
+include(":data")
+include(":domain")
 include(":presentation")

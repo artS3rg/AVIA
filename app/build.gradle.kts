@@ -36,16 +36,9 @@ android {
 }
 
 dependencies {
-    implementation(project(":network"))
-    implementation(project(":core"))
-
-    //coroutines
-    implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.kotlinx.coroutines.android)
-
-    //retrofit
-    implementation(libs.retrofit)
-    implementation(libs.converter.gson)
+    implementation(project(":data"))
+    implementation(project(":presentation"))
+    implementation(project(":domain"))
 
     //koin di
     implementation(libs.koin.android.v350)

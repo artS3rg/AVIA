@@ -6,9 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.artinc.avia.fragments.EmptyFragment
-import com.artinc.avia.fragments.HomeFragment
+import com.artinc.presentation.fragments.EmptyFragment
+import com.artinc.presentation.fragments.HomeFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.artinc.presentation.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
