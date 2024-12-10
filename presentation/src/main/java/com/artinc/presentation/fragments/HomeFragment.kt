@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -28,8 +29,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         loadSavedInput()
 
         // Сохраняем текст при его изменении
-        firstEdit.setOnFocusChangeListener { _, hasFocus ->
-            if (!hasFocus) saveInput(firstEdit.text.toString())
+        firstEdit.addTextChangedListener { text ->
+            saveInput(text.toString())
         }
 
         setupRecyclerView(view)
@@ -58,7 +59,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             FeedMarginItemDecoration(
                 startMargin = (16 * resources.displayMetrics.density).toInt(),
                 endMargin = (16 * resources.displayMetrics.density).toInt(),
-                defaultMargin = (67 * resources.displayMetrics.density).toInt(),
+                defaultMargin = (16 * resources.displayMetrics.density).toInt(),
             )
         )
         adapter = FeedAdapter(emptyList())

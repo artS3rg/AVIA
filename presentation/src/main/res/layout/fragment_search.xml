@@ -121,7 +121,9 @@
                 android:src="@drawable/navigate_default"
                 android:backgroundTint="@color/green"
                 android:foregroundTint="@color/white"
-                android:background="@drawable/rounded_rect"/>
+                android:background="@drawable/rounded_rect"
+                android:clickable="false"
+                android:focusable="false"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -149,7 +151,9 @@
                 android:src="@drawable/globus_default"
                 android:backgroundTint="@color/blue"
                 android:foregroundTint="@color/white"
-                android:background="@drawable/rounded_rect"/>
+                android:background="@drawable/rounded_rect"
+                android:clickable="false"
+                android:focusable="false"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -177,7 +181,9 @@
                 android:src="@drawable/calendar_default"
                 android:backgroundTint="@color/darkBlue"
                 android:foregroundTint="@color/white"
-                android:background="@drawable/rounded_rect"/>
+                android:background="@drawable/rounded_rect"
+                android:clickable="false"
+                android:focusable="false"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -204,7 +210,9 @@
                 android:src="@drawable/fire_default"
                 android:backgroundTint="@color/red"
                 android:foregroundTint="@color/white"
-                android:background="@drawable/rounded_rect"/>
+                android:background="@drawable/rounded_rect"
+                android:clickable="false"
+                android:focusable="false"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
